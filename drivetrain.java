@@ -22,7 +22,9 @@ public class BasicDriveTrain extends Subsystem {
 		
 		this.robotDrive = robotDrive;
 	}
-	
+	/*/
+	* Set the default command
+	**/
 	public void setDefaultCommand(Command defaultCommand) {
 		
 	}
@@ -32,21 +34,33 @@ public class BasicDriveTrain extends Subsystem {
 		
 	}
 
+	/**
+	* Drive, setting left and right power separately
+	**/
 	public void drive(double throttlePower, double turnPower) {
 		
 		
 	}
 
+	/**
+	* Drive forward, at a set power
+	**/
 	public void drive(double power) {
 		robotDrive.setLeftRightMotorOutputs(power, power);
 		
 	}
 
+	/**
+	* Turn in place
+	**/
 	public void turn(double power) {
 		// TODO Auto-generated method stub
 		
 	}
 
+	/**
+	* Stop drivetrain
+	**/
 	public void stop() {
 		// TODO Auto-generated method stub
 		
